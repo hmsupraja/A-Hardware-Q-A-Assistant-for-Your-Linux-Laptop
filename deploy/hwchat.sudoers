@@ -1,0 +1,4 @@
+# Install with:  sudo visudo -f /etc/sudoers.d/hwchat
+# Replace YOUR_USERNAME. The arguments are pinned, so this grants exactly one
+# read-only command and NOT dmidecode's other options (e.g. --dump-file).
+YOUR_USERNAME ALL=(root) NOPASSWD: /usr/sbin/dmidecode -t memory
